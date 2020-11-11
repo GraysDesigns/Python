@@ -21,6 +21,11 @@ import datetime as dt
 today = dt.date.today()
 # The current month is logged as todayMonth.
 todayMonth = today.month
+# The current year is logged as todayYear.
+todayYear = today.year
+# leapyearBool and nextLeapyearBool use the modulus calculation to either be boolean statements of 'True' of 'False' which say whether or not this year or next year are leapyears respectively.
+leapyearBool = today.year % 4 == 0
+nextLeapyearBool = today.year + 1 % 4 == 0
 # Asks the user what year they were born in. Type is an integer denoted by 'int' at the end of the variable.
 birthYearint = int(input('What year were you born?\n'))
 # Asks the user what month they were born in, expected input to be full spelled out names of the month. 
@@ -47,8 +52,14 @@ elif days > 0:
 # This passes the amount of days left until their birthday.
     print ('There are ' + str(days) + ' days until your birthday. You will be ' + str(age) + ' years old.')
 # If the variable 'days' is not 0, nor is it greater than 0, it must be a negative number, meaning their birthday has already passed. 
-else:
+
+# Since days is negative and nextLeapyearBool is false, i.e. the next year only has 365 days we continue with this elif statement.
+elif days < 0 and nextLeapyearBool:
 # This prints the absolute value of the days until the users next birthday, since here 'days' is negative, we must add days to get to the positive number
 # This also prints 'age + 1' since the users birthday has already passed this year and 'age' only presents the users age for the current year. 
 # Note: since 'today' has technically already passed, we add 364 to the days variable to get the number of days until the users birthday. 
-    print ('Your birthday is in ' + str(abs(364 + days)) + ' days. You will be ' + str(age + 1) + ' years old.') 
+    print ('Your birthday is in ' + str(abs(364 + days)) + ' days. You will be ' + str(age + 1) + ' years old.')
+
+# Otherwise, the next year is a leapyear, and 365 days should be added instead of 364.
+else:
+    print ('Your birthday is in ' + str(abs(365 + days)) + ' days. You will be ' + str(age + 1) + ' years old.')  
