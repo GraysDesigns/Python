@@ -17,17 +17,14 @@ qual = input("Which Quality of carpet would you like? (ex. Economy, Midgrade, Lu
 # The function qualCost() takes the string input from the user and converts it into the price per square foot of carpeting, this becomes a multiplier later on. You can see that there are many "or" functions to accomidate for various kinds of inputs that are outside the realm of the example
 def qualCost(q):
 # if the user selects the economy grade carpet, the price is $0.70/sqft
-    while q == False:
-        if q == "economy" or q == "Economy" or q == "econ":
-            return .7
+    if q == "economy" or q == "Economy" or q == "econ":
+        return .7
 # if the user selects the midgrade carpet, the price is $1.50/sqft
-        elif q == "Midgrade" or q == "midgrade" or q =="mid":
-            return 1.5
+    elif q == "Midgrade" or q == "midgrade" or q =="mid":
+        return 1.5
 # if the user selects the midgrade carpet, the price is $2.10/sqft
-        elif q == "Luxury" or q == "luxury" or q == "lux":
-            return 2.1
-        else:
-            return False    
+    elif q == "Luxury" or q == "luxury" or q == "lux":
+        return 2.1   
 # NOTE: dollar amounts/sqft of carpet are taken from current lowes pricing
 
 
