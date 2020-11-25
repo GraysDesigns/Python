@@ -1,11 +1,5 @@
-value1 = input("number 1: \n")
-value2 = input("number 2:\n")
-
-def is_integer(n):
-    try:
-        int(n)
-        return True
-    except ValueError:
-        return False
- 
-
+largest = None
+for value in [12, 7, 94, 3, 89]:
+    if largest is None or value >= largest:
+        largest = value
+print(largest)
