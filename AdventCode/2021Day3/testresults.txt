@@ -1,0 +1,89 @@
+0 at total index 0
+0 at total index 1
+1 at total index 2
+0 at total index 3
+0 at total index 4
+1 at total index 5
+1 at total index 6
+1 at total index 7
+1 at total index 8
+0 at total index 9
+1 at total index 10
+0 at total index 11
+1 at total index 12
+1 at total index 13
+0 at total index 14
+1 at total index 15
+0 at total index 16
+1 at total index 17
+1 at total index 18
+1 at total index 19
+1 at total index 20
+0 at total index 21
+1 at total index 22
+0 at total index 23
+1 at total index 24
+0 at total index 25
+1 at total index 26
+1 at total index 27
+1 at total index 28
+1 at total index 29
+0 at total index 30
+0 at total index 31
+1 at total index 32
+1 at total index 33
+1 at total index 34
+1 at total index 35
+1 at total index 36
+1 at total index 37
+0 at total index 38
+0 at total index 39
+1 at total index 40
+0 at total index 41
+0 at total index 42
+0 at total index 43
+0 at total index 44
+1 at total index 45
+1 at total index 46
+0 at total index 47
+0 at total index 48
+1 at total index 49
+0 at total index 50
+0 at total index 51
+0 at total index 52
+1 at total index 53
+0 at total index 54
+0 at total index 55
+1 at total index 56
+0 at total index 57
+1 at total index 58
+0 at total index 59
+#####################################
+count0 active; j = 0 at totalIndex: 0
+count1 active; j = 0 at totalIndex: 1
+count3 active; j = 0 at totalIndex: 3
+count4 active; j = 0 at totalIndex: 4
+count4 active; j = 0 at totalIndex: 9
+count1 active; j = 0 at totalIndex: 11
+count4 active; j = 0 at totalIndex: 14
+count1 active; j = 0 at totalIndex: 16
+count1 active; j = 0 at totalIndex: 21
+count3 active; j = 0 at totalIndex: 23
+count0 active; j = 0 at totalIndex: 25
+count0 active; j = 0 at totalIndex: 30
+count1 active; j = 0 at totalIndex: 31
+count3 active; j = 0 at totalIndex: 38
+count4 active; j = 0 at totalIndex: 39
+count1 active; j = 0 at totalIndex: 41
+count2 active; j = 0 at totalIndex: 42
+count3 active; j = 0 at totalIndex: 43
+count4 active; j = 0 at totalIndex: 44
+count2 active; j = 0 at totalIndex: 47
+count3 active; j = 0 at totalIndex: 48
+count0 active; j = 0 at totalIndex: 50
+count1 active; j = 0 at totalIndex: 51
+count2 active; j = 0 at totalIndex: 52
+count4 active; j = 0 at totalIndex: 54
+count0 active; j = 0 at totalIndex: 55
+count2 active; j = 0 at totalIndex: 57
+count4 active; j = 0 at totalIndex: 59

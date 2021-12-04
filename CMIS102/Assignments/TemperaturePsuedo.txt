@@ -1,0 +1,33 @@
+Define empty array 'tempsC'
+Define empty array 'tempsF'
+Set variable coolDays to 0 for counter
+Set variable warmDays to 0 for counter
+Set variable hotDays to 0 for counter
+
+for loop (iterates 10 times)
+    add to array tempsC by (asking for user input with the temperature in Celsius)
+
+print a statement saying what the following data is
+for loop (iterates for every item in array tempC)
+    print the data of the current iteration and C to indicate it is Celsius
+
+
+for loop (iterates for every item in array tempC)
+    add to the array tempsF with the conversion of the temperature to Fahrenheit
+
+
+print a statement saying what the following data is
+for loop (iterates for every item in array tempF)
+    print the data of the current iteration and F to indicate it is Fahrenheit
+
+for loop (iterates for every item in array tempF)
+    if the current iteration is less than or equal to 69 degrees
+        increment coolDays once
+    otherwise if the current iteration is less than or equal to 85 degrees
+        increment warmDays once
+    otherwise:
+        increment hotDays once
+
+print a string indicating that the number of cool days is to be displayed, also print the string format of coolDays
+print a string indicating that the number of warm days is to be displayed, also print the string format of warmDays
+print a string indicating that the number of hot days is to be displayed, also print the string format of hotDays
