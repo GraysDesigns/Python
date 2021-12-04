@@ -37,12 +37,16 @@ birthYearint = int(input('What year were you born?\n'))
 # Asks the user what month they were born in, expected input to be full spelled out names of the month. 
 # For now, input is currently a string denoted by 'str' at the end of the variable. 
 birthMonthstr = input('What month were you born? (ex. november)\n')
+<<<<<<< HEAD:CMIS102/Discussions/Discussion3Gray.py
 
+=======
+>>>>>>> 23481e6422c245c9dbf78b1a43629432cbe5069d:Discussion3Gray.py
 # Using the previous data, asks the user what day of the month they were born. Type is an integer denoted by 'int' at the end of the variable.
 birthDayint = int(input('What day of ' + birthMonthstr + ' were you born on?\n'))
 
 # Using the 'strptime' module, we take the spelled out month, annotated by the '%B' and convert it into datetime syntax. Now the variable can be used as an integer as denoted by the 'int' at the end of the variable.  
 birthMonthint = dt.datetime.strptime(birthMonthstr, '%B').month
+<<<<<<< HEAD:CMIS102/Discussions/Discussion3Gray.py
 
 # Using the previous data, we find the users birthday of this year
 thisYearBirthday = dt.date(today.year, birthMonthint, birthDayint)
@@ -53,12 +57,21 @@ delta = (thisYearBirthday - today)
 # The 'days' variable strips the delta down to how many days it is equal to
 days = delta.days
 
+=======
+# Using the previous data, we find the users birthday of this year
+thisYearBirthday = dt.date(today.year, birthMonthint, birthDayint)
+# This is the difference in days until or since the users birthday. 
+delta = (thisYearBirthday - today)
+# The 'days' variable strips the delta down to how many days it is equal to
+days = delta.days
+>>>>>>> 23481e6422c245c9dbf78b1a43629432cbe5069d:Discussion3Gray.py
 # The users age is equal to the current year minus the year they were born. ex. 2020 - 1998 = 22; the user is 22 years old.
 age = today.year - birthYearint
 
 # if the variable 'days' is equal to 0, this means that the users birthday is today. 
 if days == 0:
     print('it\'s your birthday! You are ' + str(age) + ' years old. Happy birthday!!')
+<<<<<<< HEAD:CMIS102/Discussions/Discussion3Gray.py
 
 # Otherwise, if the variable 'days' is greater than 0, that means their birthday has not passed yet this year.   
 elif days > 0:
@@ -76,3 +89,15 @@ elif days < 0 and nextLeapyearBool == False:
 # Otherwise, the next year is a leapyear, and 365 days should be added instead of 364.
 else:
     print ('Your birthday is in ' + str(abs(365 + days)) + ' days. You will be ' + str(age + 1) + ' years old.')  
+=======
+# Otherwise, if the variable 'days' is greater than 0, that means their birthday has not passed yet this year.   
+elif days > 0:
+# This passes the amount of days left until their birthday.
+    print ('There are ' + str(days) + ' until your birthday. You will be ' + str(age) + ' years old.')
+# If the variable 'days' is not 0, nor is it greater than 0, it must be a negative number, meaning their birthday has already passed. 
+else:
+# This prints the absolute value of the days until the users next birthday, since here 'days' is negative, we must add days to get to the positive number
+# This also prints 'age + 1' since the users birthday has already passed this year and 'age' only presents the users age for the current year. 
+# Note: since 'today' has technically already passed, we add 364 to the days variable to get the number of days until the users birthday. 
+    print ('Your birthday is in ' + str(abs(364 + days)) + ' days. You will be ' + str(age + 1) + ' years old.') 
+>>>>>>> 23481e6422c245c9dbf78b1a43629432cbe5069d:Discussion3Gray.py
